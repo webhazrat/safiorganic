@@ -2,14 +2,33 @@ import { Button } from "@/components/ui/button"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+    <div className="p-6">
+      <div className="text-center">
         <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+          <h1 className="text-lg font-medium">Safi Organic!</h1>
+          <h1 className="font-medium">Development on going!</h1>
+          <p>
+            Stay connect with{" "}
+            <a
+              href="https://www.facebook.com/safiorganicbd"
+              className="text-blue-500"
+            >
+              Facebook
+            </a>
+          </p>
+          <br />
+          <p>Address: Godagari, Rajshahi , Rajshahi, Bangladesh, 6290</p>
+          <p>
+            Phone: <a href="tel:+8801760749659">+880 1760-749659</a>
+          </p>
+          <p>
+            Email:{" "}
+            <a href="mailto:mdsaif01918424485@gmail.com">
+              mdsaif01918424485@gmail.com
+            </a>
+          </p>
         </div>
+        <br />
         <div className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
