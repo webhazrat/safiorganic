@@ -1,11 +1,9 @@
-import { Button } from "@/components/ui/button"
-
 export default function Page() {
   return (
     <div className="p-6">
       <div className="text-center">
         <div>
-          <h1 className="text-lg font-medium">Safi Organic!</h1>
+          <h1 className="text-lg font-medium">Safi Organic Bangladesh!</h1>
           <h1 className="font-medium">Development on going!</h1>
           <p>
             Stay connect with{" "}
