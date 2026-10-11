@@ -51,7 +51,7 @@ export default function Page() {
         </div>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {products.slice(0, 4).map((product) => (
-            <ProductCard key={product.name} product={{ product }} />
+            <ProductCard key={product.name} product={product} />
           ))}
         </div>
       </div>
