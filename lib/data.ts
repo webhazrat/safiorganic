@@ -1,0 +1,120 @@
+const photos = {
+  honey:
+    "https://images.unsplash.com/photo-1573697610008-4c72b4e9508f?auto=format&fit=crop&w=1200&q=85",
+  nuts: "https://images.unsplash.com/photo-1477506350614-fcdc29a3b157?auto=format&fit=crop&w=1200&q=85",
+  dates:
+    "https://images.unsplash.com/photo-1633677658451-494ed922d02f?auto=format&fit=crop&w=1200&q=85",
+  spread:
+    "https://images.unsplash.com/photo-1633678009985-313654d2c8a5?auto=format&fit=crop&w=1200&q=85",
+  bowls:
+    "https://images.unsplash.com/photo-1769255484888-e2c82fc1238c?auto=format&fit=crop&w=1200&q=85",
+  tea: "https://images.unsplash.com/photo-1548626995-d16b6a752c97?auto=format&fit=crop&w=1200&q=85",
+  fruit:
+    "https://images.unsplash.com/photo-1729949132990-8f62cd8a641a?auto=format&fit=crop&w=1200&q=85",
+  market:
+    "https://images.unsplash.com/photo-1771699434978-7627e1362c31?auto=format&fit=crop&w=1200&q=85",
+  pineapple:
+    "https://images.unsplash.com/photo-1632242342964-242876b950c3?auto=format&fit=crop&w=1200&q=85",
+}
+
+export const products = [
+  {
+    name: "Sundarbans Forest Honey",
+    bn: "সুন্দরবনের খাঁটি মধু",
+    info: "Raw & unprocessed • 500g",
+    price: 850,
+    old: 990,
+    off: "14% OFF",
+    rating: 4.9,
+    image: photos.honey,
+    category: "Honey",
+  },
+  {
+    name: "Premium Ajwa Dates",
+    bn: "প্রিমিয়াম আজওয়া খেজুর",
+    info: "Naturally sweet • 400g",
+    price: 1190,
+    old: 1350,
+    off: "12% OFF",
+    rating: 4.8,
+    image: photos.dates,
+    category: "Dates",
+  },
+  {
+    name: "Roasted Mixed Nuts",
+    bn: "রোস্টেড মিক্সড নাটস",
+    info: "Salt free • 350g",
+    price: 780,
+    old: 890,
+    off: "12% OFF",
+    rating: 4.7,
+    image: photos.nuts,
+    category: "Nuts",
+  },
+  {
+    name: "Daily Seed Mix",
+    bn: "ডেইলি সিড মিক্স",
+    info: "Omega rich • 300g",
+    price: 620,
+    old: 750,
+    off: "17% OFF",
+    rating: 4.9,
+    image: photos.bowls,
+    category: "Seeds",
+  },
+  {
+    name: "Organic Masala Tea",
+    bn: "অর্গানিক মসলা চা",
+    info: "Whole leaf • 200g",
+    price: 490,
+    old: 560,
+    off: "13% OFF",
+    rating: 4.6,
+    image: photos.tea,
+    category: "Tea",
+  },
+  {
+    name: "Family Dry Fruit Mix",
+    bn: "ফ্যামিলি ড্রাই ফ্রুট মিক্স",
+    info: "No added sugar • 500g",
+    price: 990,
+    old: 1150,
+    off: "14% OFF",
+    rating: 4.8,
+    image: photos.spread,
+    category: "Dry Fruits",
+  },
+  {
+    name: "Golden Turmeric",
+    bn: "দেশি হলুদ গুঁড়া",
+    info: "Stone ground • 250g",
+    price: 280,
+    old: 330,
+    off: "15% OFF",
+    rating: 4.7,
+    image: photos.fruit,
+    category: "Spices",
+  },
+  {
+    name: "Black Seed Honey",
+    bn: "কালোজিরা ফুলের মধু",
+    info: "Single origin • 500g",
+    price: 920,
+    old: 1050,
+    off: "12% OFF",
+    rating: 4.9,
+    image: photos.honey,
+    category: "Honey",
+  },
+]
+
+export const categories = [
+  ["Honey", "মধু", photos.honey],
+  ["Dry Fruits", "ড্রাই ফ্রুটস", photos.spread],
+  ["Nuts & Seeds", "বাদাম ও বীজ", photos.nuts],
+  ["Dates", "খেজুর", photos.dates],
+  ["Spices", "মসলা", photos.fruit],
+  ["Tea", "চা", photos.tea],
+  ["Healthy Mix", "হেলদি মিক্স", photos.bowls],
+  ["Natural Foods", "প্রাকৃতিক খাবার", photos.pineapple],
+]
