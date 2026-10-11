@@ -5,7 +5,7 @@ import CategoryHighlighter from "@/components/category-highlighter"
 import MainMenu from "@/components/main-menu"
 import ProductCard from "@/components/product-card"
 import { Button } from "@/components/ui/button"
-import { categories } from "@/lib/data"
+import { categories, products } from "@/lib/data"
 import { ArrowRight } from "lucide-react"
 
 export default function Page() {
@@ -18,7 +18,7 @@ export default function Page() {
 
       <div className="layout-p">
         <div className="border-b py-20">
-          <div className="mb-8 flex items-end justify-between">
+          <div className="flex-inline mb-8 flex-col md:flex md:flex-row md:items-end md:justify-between">
             <div>
               <h5 className="mb-2 text-xs text-primary uppercase">
                 Explore The Pantry
@@ -29,7 +29,7 @@ export default function Page() {
               View all categories <ArrowRight />
             </Button>
           </div>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {categories.map(([title, bn, photo]) => (
               <CategoryCard key={title} title={title} bn={bn} photo={photo} />
             ))}
@@ -38,7 +38,7 @@ export default function Page() {
       </div>
 
       <div className="layout-p pt-20">
-        <div className="mb-8 flex items-end justify-between">
+        <div className="flex-inline mb-8 flex-col md:flex md:flex-row md:items-end md:justify-between">
           <div>
             <h5 className="mb-2 text-xs text-primary uppercase">
               Curated for you
@@ -49,8 +49,10 @@ export default function Page() {
             Shop all products <ArrowRight />
           </Button>
         </div>
-        <div className="grid grid-cols-4 gap-4">
-          <ProductCard />
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          {products.slice(0, 4).map((product) => (
+            <ProductCard key={product.name} product={product} />
+          ))}
         </div>
       </div>
 

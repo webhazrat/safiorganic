@@ -1,31 +1,33 @@
-import { Heart, Leaf, Search, ShoppingBag, User2 } from "lucide-react"
+import { Heart, Menu, Search, ShoppingBag, User2 } from "lucide-react"
 import Logo from "./logo"
-import Link from "next/link"
 import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group"
 import { Button } from "./ui/button"
+import Nav from "./nav"
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 
 export default function MainMenu() {
   return (
-    <div className="layout-p bg-gray-100 py-3">
-      <div className="flex items-center justify-between">
+    <div className="layout-p sticky top-0 z-30 bg-gray-100 py-3">
+      <div className="md:flex md:items-center md:justify-between">
         <div className="flex items-center gap-18">
-          <Logo />
-          <nav className="text-black">
-            <ul className="flex items-center gap-8 text-sm text-[15px] font-medium">
-              <li>
-                <Link href="#">Shop</Link>
-              </li>
-              <li>
-                <Link href="#">Categories</Link>
-              </li>
-              <li>
-                <Link href="#">Offers</Link>
-              </li>
-              <li>
-                <Link href="#">Our Story</Link>
-              </li>
-            </ul>
-          </nav>
+          <div className="flex w-full items-center justify-between">
+            <Sheet>
+              <SheetTrigger asChild className="md:hidden">
+                <Button variant="ghost" size="icon">
+                  <Menu className="size-4" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <div className="p-10">
+                  <Nav />
+                </div>
+              </SheetContent>
+            </Sheet>
+            <Logo />
+          </div>
+          <div className="hidden shrink-0 md:block">
+            <Nav />
+          </div>
         </div>
 
         <div className="flex items-center gap-2">

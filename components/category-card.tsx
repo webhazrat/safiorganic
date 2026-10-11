@@ -23,7 +23,7 @@ export default function CategoryCard({ title, bn, photo }: CategoryCardProps) {
 
         <div className="absolute bottom-0 left-0 z-10 flex w-full items-end justify-between gap-4 p-4 text-white">
           <div>
-            <h3 className="text-2xl font-semibold">{title}</h3>
+            <h3 className="font-semibold md:text-2xl">{title}</h3>
             <p className="font-mono">{bn}</p>
           </div>
 
