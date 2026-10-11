@@ -30,7 +30,7 @@ export default function RootLayout({
         inter.variable
       )}
     >
-      <body>
+      <body className="overflow-x-hidden">
         <ThemeProvider defaultTheme="light">{children}</ThemeProvider>
       </body>
     </html>
