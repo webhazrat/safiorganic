@@ -1,13 +1,12 @@
 import { Heart, Menu, Search, ShoppingBag, User2 } from "lucide-react"
 import Logo from "./logo"
-import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group"
 import { Button } from "./ui/button"
 import Nav from "./nav"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 
 export default function MainMenu() {
   return (
-    <div className="layout-p sticky top-0 z-30 bg-gray-100 py-3">
+    <div className="layout-p sticky top-0 z-30 bg-neutral-50/80 py-3 shadow-2xs backdrop-blur-2xl dark:bg-neutral-950/30">
       <div className="md:flex md:items-center md:justify-between">
         <div className="flex items-center gap-18">
           <div className="flex w-full items-center justify-between">
@@ -30,13 +29,10 @@ export default function MainMenu() {
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <InputGroup className="max-w-xs">
-            <InputGroupInput placeholder="Search..." />
-            <InputGroupAddon>
-              <Search />
-            </InputGroupAddon>
-          </InputGroup>
+        <div className="hidden items-center justify-center gap-2 md:flex">
+          <Button variant="ghost" size="icon">
+            <Search />
+          </Button>
           <Button variant="ghost" size="icon">
             <User2 />
           </Button>
